@@ -1,0 +1,110 @@
+/* General reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #617eaa7c;  /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5e5e5e;
+    text-align: center;
+}
+
+/* Input and Button Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Task Input */
+#task-input, #date-input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 200px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect for inputs */
+#task-input:focus, #date-input:focus {
+    border-color: #7a7a7a;
+}
+
+/* Add Button */
+button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 600px;
+}
+
+/* Task Item */
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+/* Date Styling */
+.date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Delete Button */
+.delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Delete Button Hover Effect */
+.delete:hover {
+    background-color: #d32f2f;
+}
